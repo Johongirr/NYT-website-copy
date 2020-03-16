@@ -1,0 +1,394 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* css variables */
+:root {
+    --paragraph-color: #333333;
+    --main-links-color: #000000;
+    --bottom-links-color: #666;
+    --color-white: #fff;
+}
+body {
+    font-family: nyt-imperial,georgia,'times new roman',times,serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+/* main navigation */
+.site-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    padding: 0.4em 1em;
+    border-bottom: 1px solid var(--bottom-links-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+/* main nav let nav */
+.site-nav .left-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-nav .left-nav > * {
+    cursor: pointer;
+    padding-left: 1rem;
+    color: var(--paragraph-color);
+}
+.site-nav .left-nav h4 a{
+    color: var(--main-links-color);
+}
+/* main nav middle  */
+.site-nav h2 a{
+    text-decoration: none;
+    color: var(--main-links-color);
+}
+/* main nav right nav  */
+.site-nav .right-nav a{
+    background-color: #567b95;
+    border: 1ps solid #326891;
+    padding: 0.5em 0.5em;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/* header */
+header h1 {
+    text-align: center;
+}
+header figcaption {
+    width: 90%;
+    color: #666;
+}
+/* article */
+article section{
+    width: 60%;
+    margin: 0 auto;
+}
+article .icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+article .media-icons {
+    display: flex;
+}
+article h3 a{
+    color: var(--main-links-color);
+}
+
+article .media-icons li {
+    margin-left: 0.8rem;
+}
+article .media-icons li:first-child {
+    margin-left: 0;
+}
+article .media-icons a {
+    padding-left: 1rem;
+}
+ 
+article .media-icons .last-li {
+    margin-left: 1rem;
+}
+article .media-icons a {
+    color: var(--paragraph-color);
+}
+article .media-icons a:hover {
+    background-color: var(--color-white);
+}
+/* article theory section */
+.theories-section {
+    width: 85%;
+    margin-bottom: 2rem;
+}
+.bg-image {
+    height: 600px;
+    background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}  
+ 
+.theories-section .first, .second {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 0.7rem;
+}
+.theories-section span {
+    color: var(--bottom-links-color);
+}
+.container-img {
+    padding-top: 8rem;
+}
+.container-img .first {
+    padding-top: 1.4rem;
+  
+}
+.container-img .second {
+    padding-top: 12rem;
+}
+.theories-section .bar-theories {
+    display: inline-block;
+    height: 2px;
+    background-color: var(--main-links-color);
+    width: 60px;
+    margin-top: 2rem;
+}
+/* =================== */
+section figcaption {
+    color: var(--bottom-links-color);
+}
+article [frameborder="0"]{
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+article .article-bottom-text {
+    display: inline-block;
+    font-size: 0.8rem;
+    color: var(--bottom-links-color);
+}
+article .comments {
+    display: flex;
+    justify-content: space-between;
+
+}
+article .comments-btn {
+    text-decoration: none;
+    background-color: rgb(86, 123, 149);
+    padding: 8px 5rem;
+    color: var(--color-white);
+}
+/* more articles secion */
+#more-articles {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-gap: 30px;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--bottom-links-color);
+}
+
+/* more articles section */
+#more-articles .articles-container {
+    grid-column: 1 / 7;
+}
+#more-articles .articles-container .other-articles{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+    padding-bottom: 2rem;
+}
+#more-articles h2 {
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+#more-articles a{
+    color: var(--main-links-color);
+    text-decoration: none;
+}
+#more-articles a:hover {
+    color: var(--bottom-links-color);
+}
+#more-articles figcaption {
+font-size: 0.7rem;
+}
+#more-articles p {
+    font-size: 0.8rem;
+    color: var(--bottom-links-color);
+}
+
+/* most popular articles section */
+#more-articles .most-popular-articles {
+    grid-column: 7 / 9;
+}
+#more-articles .most-popular-articles h2 {
+    border-bottom: 1px solid var(--bottom-links-color);
+}
+#more-articles .most-popular-articles a {
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--bottom-links-color);
+}
+#more-articles .most-popular-articles a:last-child {
+    padding: 0 0;
+}
+
+/* footer */
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+}
+footer .flex a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--bottom-links-color);
+}
+/* footer links */
+footer .footer-links {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    grid-gap: 20px;
+}
+footer .footer-links a {  
+    color: var(--main-links-color);
+    font-size: 0.8rem;
+}
+footer .footer-links h2 {
+    font-size: 1rem;
+}
+footer .footer-links .border-left {
+    padding-left: 0.7rem;
+    border-left: 1px solid rgb(226, 223, 223);
+}
+footer .footer-links .border-left a {
+    padding: 0.5rem 0;
+}
+footer .footer-links .text-small {
+    font-size: 0.6rem;
+}
+/* bottom footer */
+.footer-bottom-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.6rem;
+    padding: 1rem 0  2rem 0;
+    
+   
+}
+.footer-bottom-links a {
+    color: var(--bottom-links-color);
+    padding: 0 0.5rem;
+}
+
+
+/* read more bottom screen fixed element */
+.read-more-fixed {
+    position: fixed;
+    bottom: 0;
+    padding: 1rem 0;
+    background-color: var(--color-white);
+    border-top: 1px solid var(--main-links-color);
+    width: 100%;
+    cursor: pointer;
+}
+.read-more-container {
+    width: 960px;
+    margin: 0 auto;
+}
+.read-more-container div {
+    display: flex;
+    justify-content: space-between;
+}
+.read-more-container .read-more-info {
+    display: none;
+}
+.read-more-container .center-text {
+    text-align: center;
+}
+.read-more-info.show {
+    display: flex;
+    align-items: center;
+    background-color: var(--main-links-color);
+    padding: 3rem;
+    color: var(--color-white);
+    width: 100%;
+    font-size: 1rem;
+    
+}
+.read-more-info a.read-btn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--main-links-color) !important;
+    color: var(--color-white);
+    padding: 1rem;
+}
+.read-more-info.close {
+    display: none;
+}
+.show {
+    display: flex;
+}
+ 
+/* media queries */
+@media (max-width: 1100px) {
+     header figure{
+        margin: 0 auto;
+        width: 80%;
+     }
+     article .icons-container {
+         justify-content: space-evenly;
+     }
+     article h3 {
+         text-align: center;
+     }
+     .theories-section {
+         display: none;
+     }
+     #more-articles .articles-container .other-articles {
+         grid-template-columns: repeat(2,1fr);
+     }
+     article section{
+        width: 70%;
+     }
+}
+@media (max-width: 800px) {
+    .most-popular-articles {
+        display: none;
+    }
+    #more-articles .articles-container {
+        grid-column: span 9;
+    }
+    .site-nav .remove-in-mobile {
+        display: none;
+    }
+    .site-nav h2 {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+     
+}
+@media (max-width: 500px) {
+    article section{
+        width: 90%;
+     }
+     article [frameborder="0"]{
+        height: 350px;
+     }
+    #more-articles .articles-container .other-articles {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .comments {
+        flex-direction: column;
+         
+    }
+    .comments .comments-btn {
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .read-more-container div {
+        justify-content: flex-start;
+    }
+    .read-more-container .cursor {
+        font-size: 0.8rem;
+        letter-spacing: 0;
+    }
+    .read-more-container .cursor .collapse {
+        border-left: 1px solid #000;
+        margin-left: 1rem;
+        padding-left: 0.4rem;
+    }
+}
