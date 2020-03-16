@@ -15,4 +15,4 @@
 4. Made it responsive for all screen sizes
 5. Add a little bit of functionality with JavaScript
 
-Watch live here [live-version]()
+Watch live here [live-versio]()
