@@ -2,7 +2,7 @@
 
 ### Website is built in mobile-first approach and is responsible for all device's screen sizes
 
-### This project was part of lessons in Odin Project
+### This project was part of  Odin Project
 
 ### What were requirements?
 1. Make it look alike as much as you can
