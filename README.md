@@ -6,7 +6,7 @@
 
 ### What were requirements?
 1. Make it look alike as much as you can
-2. Do not worry about interactivity, and responsiveness
+ 
 
 ### How I built?
 1. First tried to write as semantic HTML as possible
